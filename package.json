@@ -1,0 +1,31 @@
+{
+  "name": "mapcidade-lockdown-audit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only CLI that audits a municipal GIS database against a fixed 10-rule lockdown-prevention playbook and reports OK/FAIL/SKIP per rule, with corrective SQL shown as text only.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "demo": "tsx src/index.ts --city rivermeadow",
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "cli-table3": "^0.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.39.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^5.0.0"
+  }
+}
